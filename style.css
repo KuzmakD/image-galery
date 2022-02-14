@@ -22,6 +22,7 @@ body {
    margin: auto;
 }
 
+/* HEADER DECTION START */
 header {
    border-bottom: 5px solid orange;
 }
@@ -59,28 +60,48 @@ input:focus {
    border: 1px solid orange;
 }
 
-#search_box i {
+#search {
    color: black;
    position: absolute;
    cursor: pointer;
    top: 25%;
-   right: 4%;
+   right: 10%;
    transition: 1s;
 }
+.clear-search {
+   color: black;
+   position: absolute;
+   cursor: pointer;
+   top: 25%;
+   right: 5%;
+   transition: 0.5s;
+   font-size: 16px;
+   font-weight: 900;
+}
+
 
 #search_box i:hover {
    color: orange;
 }
+.clear-search:hover {
+   color: orange;
+}
+/* HEADER DECTION END */
 
-#grid {
+/* GALERY  DSECTIOn START */
+
+.galery-images {
+   box-sizing: border-box;
+   padding-bottom: 20px;
    width: 100%;
+   height: auto;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
    align-items: flex-start;
 }
 
-.img {
+.image {
    width: 380px;
    height: 214px;
    margin-top: 15px;
@@ -89,6 +110,53 @@ input:focus {
    border-radius: 2px;
    cursor: pointer;
 }
+
+/* FOOTER START*/
+footer {
+   border-top: 5px solid orange;
+   font-family: 'Comfortaa', cursive;
+   font-size: 24px;
+   font-weight: bold;
+}
+
+.footer_container {
+   box-sizing: border-box;
+   height: 100px;
+   padding: 25px 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer_git_link {
+   text-decoration: none;
+   color: white;
+   transition: 0.5s;
+}
+.footer_git_link:hover {
+   color: orange;
+}
+
+.footer_year:hover {
+   color: orange;
+}
+
+.footer_rss_logo {
+   width: 135px;
+   height: 50px;
+}
+.footer_rss_img {
+   width: 135px;
+   height: 50px;
+   background-size: containt;
+   background-repeat: no-repeat;
+   transition: 0.5s;
+}
+.footer_rss_img:hover {
+   color: orange;
+   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+ }
+/* FOOTER SECTION END */
 
 @media(max-width:1280px) {
    .container {
